@@ -1,0 +1,19 @@
+VERY IMPORTANT:::
+In regular JavaScript, style names are written in hyphenated-lowercase:
+
+const styles = {
+  'margin-top':       "20px",
+  'background-color': "green"
+};
+In React, those same names are instead written in camelCase:
+
+const styles = {
+  marginTop:       "20px",
+  backgroundColor: "green"
+};
+This has zero effect on style property values, only on style property names.
+
+___________________-
+Instructions
+1.
+Give your styles object two more properties: a marginTop of 100px, and a fontSize of 50px.
