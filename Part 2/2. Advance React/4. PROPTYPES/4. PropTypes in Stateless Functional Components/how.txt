@@ -1,0 +1,40 @@
+Remember stateless functional components? You can see some familiar ones in Example.js.
+
+How could you write propTypes for a stateless functional component?
+
+// Usual way:
+class Example extends React.component{
+}
+Example.propTypes = {
+
+};
+...
+
+// Stateless functional component way:
+const Example = (props) => {
+  // ummm ??????
+It turns out the process is fairly similar. To write propTypes for a stateless functional component, you define a propTypes object as a property of the stateless functional component itself. Here’s what that looks like:
+
+const Example = (props) => {
+  return <h1>{props.message}</h1>;
+}
+
+Example.propTypes = {
+  message: React.PropTypes.string.isRequired
+};
+
+____________________
+
+Instructions
+1.
+Select GuineaPigs.js.
+
+You can see your GuineaPigs stateless functional component from earlier. Let’s give it a propType.
+
+After the GuineaPigs class declaration, define a propTypes property on GuineaPigs. Use the example code above as a guide.
+
+GuineaPigs is only expecting one prop, so it should only get one propType.
+
+Give GuineaPigs one propType, matching its expected prop. Make the propType isRequired.
+
+If you aren’t sure what prop GuineaPigs is expecting, check the render function in GuineaPigsContainer.js.
