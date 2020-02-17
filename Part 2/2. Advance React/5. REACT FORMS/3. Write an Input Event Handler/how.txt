@@ -1,0 +1,15 @@
+In this exercise, you will define a function that gets called whenever a user enters or deletes any character.
+
+This function will be an event handler. It will listen for change events. You can see an example of an event handler listening for change events in Example.js.
+
+Instructions
+1.
+Select Input.js.
+
+Before Input‘s render function, write a new method named handleUserInput.
+
+Give this method one parameter, named e.
+
+Inside of this function’s body, call this.setState. Set the state’s userInput property equal to e.target.value.
+
+e.target.value will equal the text in the <input /> field. You are setting this.state.userInput equal to whatever text is currently in <input />.
