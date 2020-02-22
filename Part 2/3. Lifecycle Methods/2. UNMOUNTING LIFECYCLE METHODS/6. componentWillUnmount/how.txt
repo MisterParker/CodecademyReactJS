@@ -28,3 +28,5 @@ componentWillUnmount(prevProps, prevState) {
 
 4.
 Try entering some text, and then adding some more enthusiasm. This time the Stop button should work!
+
+DONE
